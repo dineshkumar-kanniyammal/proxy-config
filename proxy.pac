@@ -5,9 +5,9 @@ function FindProxyForURL(url, host) {
     }
     
     // Use the proxy for all other requests
-    if (shExpMatch(url, "http://*") || shExpMatch(url, "https://*")) {
-        return "PROXY web-proxy.example.com:8080";
-    }
+    //if (shExpMatch(url, "http://*") || shExpMatch(url, "https://*")) {
+      //  return "PROXY web-proxy.example.com:8080";
+    //}
     
     // If no match, return "DIRECT" (no proxy)
     return "DIRECT";
